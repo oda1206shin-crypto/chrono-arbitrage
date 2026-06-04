@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist/scraper",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noEmit": false
+  },
+  "include": ["scraper/**/*.ts"],
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true
+  }
+}
